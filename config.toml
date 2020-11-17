@@ -1,0 +1,45 @@
+title = "Mysite blog" # sostituite con il nome da dare al sito
+baseURL = "/" # importante per la distribuzione del sito in netlify
+languageCode = "en-us"
+theme = "ananke" # non theme = "gohugo-theme-ananke"
+# themesDir = "../.."  questa voce va commentata o eliminata
+
+
+DefaultContentLanguage = "it" # imposta il linguaggio del sito a italiano
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[markup] # questa sezione va aggiunta se si vuole combinare codice html con Markdown
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xHTML = true
+
+[params]
+  favicon = ""
+  site_logo = ""
+  description = "The last theme you'll ever need. Maybe."
+  facebook = ""
+  twitter = "https://twitter.com/GoHugoIO"
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  rss = ""
+  custom_css = ["css/custom.css"] #  se si vuole inserire un css personalizzato
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "images/banner_hugo.jpg" # va inserita un'immagine che identifichi il sito
+  recent_posts_number = 2
